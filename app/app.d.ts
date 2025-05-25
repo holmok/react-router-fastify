@@ -7,14 +7,14 @@ declare module 'react-router' {
     config: typeof Config
   }
 
-  export interface LoaderArgs extends DataFunctionArgs {
+  export interface LoaderFunctionArgs extends DataFunctionArgs {
     context: {
       log: Logger
       config: typeof Config
     }
   }
 
-  export interface ActionArgs extends DataFunctionArgs {
+  export interface ActionsFunctionArgs extends DataFunctionArgs {
     context: {
       log: Logger
       config: typeof Config

@@ -14,5 +14,5 @@ export function loader(args: LoaderFunctionArgs) {
 
 export default function Index() {
   const { appName } = useLoaderData<typeof loader>()
-  return (<p>Hello from the {appName} app.</p>)
+  return <p>Hello from the {appName} app.</p>
 }
