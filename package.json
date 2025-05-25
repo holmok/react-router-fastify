@@ -1,26 +1,22 @@
 {
   "name": "react-router-fastify",
-  "private": true,
+  "version": "0.0.1",
+  "description": "A fast and efficient React Router server-side rendering solution using Fastify.",
+  "keywords": [
+    "react",
+    "react-router",
+    "fastify",
+    "server-side-rendering",
+    "ssr",
+    "react-query"
+  ],
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/simonsmith/react-router-fastify"
+    "url": "https://github.com/holmok/react-router-fastify"
   },
-  "author": "Simon Smith <simonsmith@users.noreply.github.com>",
+  "author": "Christopher <christopher@holmoks.com>",
   "license": "MIT",
-  "scripts": {
-    "dev": "tsx watch --no-warnings --env-file=.env ./server/index.ts",
-    "clean": "rm -rf dist && rm -rf build",
-    "format": "prettier --write .",
-    "compile:server": "tsc --project ./tsconfig.server.json",
-    "compile:client": "react-router build",
-    "compile": "yarn compile:server && yarn compile:client",
-    "build": "yarn && yarn format && yarn lint && yarn clean && yarn compile",
-    "lint": "eslint",
-    "tsc": "tsc",
-    "typegen": "react-router typegen",
-    "start": "NODE_ENV=production node dist/index.js"
-  },
   "dependencies": {
     "@mcansh/remix-fastify": "^4.0.8",
     "@react-router/fs-routes": "^7.6.0",
@@ -50,6 +46,19 @@
     "vite": "^6.2.1"
   },
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "tsx watch --no-warnings --env-file=.env ./server/index.ts",
+    "clean": "rm -rf dist && rm -rf build",
+    "format": "prettier --write .",
+    "compile:server": "tsc --project ./tsconfig.server.json",
+    "compile:client": "react-router build",
+    "compile": "yarn compile:server && yarn compile:client",
+    "build": "yarn && yarn format && yarn lint && yarn clean && yarn compile",
+    "lint": "eslint",
+    "tsc": "tsc",
+    "typegen": "react-router typegen",
+    "start": "NODE_ENV=production node dist/index.js"
   }
 }
