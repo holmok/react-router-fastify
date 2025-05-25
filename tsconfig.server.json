@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "rootDir": "./server",
+    "types": ["node"],
+    "moduleResolution": "bundler",
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "alwaysStrict": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "declarationDir": "./dist"
+  },
+
+  "include": ["./server/**/*.ts"],
+  "exclude": ["./node_modules"]
+}

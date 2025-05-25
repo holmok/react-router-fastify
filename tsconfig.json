@@ -1,0 +1,30 @@
+{
+  "include": ["**/*.ts", "**/*.tsx", ".react-router/types/**/*"],
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "module": "es2022",
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "noImplicitOverride": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es2020",
+    "types": ["@react-router/node", "vite/client"],
+    "verbatimModuleSyntax": true,
+    "paths": {
+      "@app/*": ["./app/*"],
+      "@routes/*": ["./app/routes/*"],
+      "@components/*": ["./app/components/*"],
+      "@server/*": ["./server/*"],
+      "@shared/*": ["./shared/*"]
+    },
+    "noEmit": true,
+    "rootDirs": [".", "./.react-router/types"],
+    "plugins": [{ "name": "@react-router/dev" }]
+  }
+}
