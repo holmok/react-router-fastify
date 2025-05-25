@@ -3,6 +3,8 @@
 Bare bones react router 7 and fastify
 
 - ssr
+- framework mode
+- File system routing convention
 - no css
 - prettier (standard like formatting)
 - eslint
