@@ -5,6 +5,14 @@
     "rootDir": "./server",
     "types": ["node"],
     "moduleResolution": "bundler",
+    "baseUrl": "./server",
+    "paths": {
+      "@app/*": ["./app/*"],
+      "@layouts/*": ["./app/layouts/*"],
+      "@routes/*": ["./app/routes/*"],
+      "@components/*": ["./app/components/*"],
+      "@server/*": ["./server/*"]
+    },
     "declaration": true,
     "sourceMap": true,
     "outDir": "./dist",

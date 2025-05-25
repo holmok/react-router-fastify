@@ -2,7 +2,6 @@
   "include": ["**/*.ts", "**/*.tsx", ".react-router/types/**/*"],
   "compilerOptions": {
     "allowJs": true,
-    "baseUrl": ".",
     "esModuleInterop": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
@@ -16,12 +15,13 @@
     "target": "es2020",
     "types": ["@react-router/node", "vite/client"],
     "verbatimModuleSyntax": true,
+    "baseUrl": "./",
     "paths": {
       "@app/*": ["./app/*"],
+      "@layouts/*": ["./app/layouts/*"],
       "@routes/*": ["./app/routes/*"],
       "@components/*": ["./app/components/*"],
-      "@server/*": ["./server/*"],
-      "@shared/*": ["./shared/*"]
+      "@server/*": ["./server/*"]
     },
     "noEmit": true,
     "rootDirs": [".", "./.react-router/types"],

@@ -5,8 +5,8 @@ export const appName = 'react-router-fastify'
 export const isProduction = process.env.NODE_ENV === 'production'
 export const isDevelopment = process.env.NODE_ENV === 'development'
 
-export const SERVER_PORT = Number(process.env.PORT ?? 3000)
-export const SERVER_HOST = process.env.HOST ?? 'localhost'
+export const port = Number(process.env.SERVER_PORT ?? 3000)
+export const host = process.env.SERVER_HOST ?? 'localhost'
 
 const devPinoOptions: Pino.LoggerOptions = {
   name: process.env.LOG_NAME ?? 'rrf',

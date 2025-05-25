@@ -11,8 +11,8 @@ const app = fastify({
 })
 
 const startServer = async () => {
-  const port = Config.SERVER_PORT
-  const host = Config.SERVER_HOST
+  const { host, port } = Config
+
   try {
     app.register(reactRouterFastify, {
       getLoadContext: (req, res) => {
