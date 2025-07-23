@@ -1,31 +1,31 @@
 {
-  "compilerOptions": {
-    "target": "ES2022",
-    "module": "ESNext",
-    "rootDir": "./server",
-    "types": ["node"],
-    "moduleResolution": "bundler",
-    "baseUrl": "./server",
-    "paths": {
-      "@app/*": ["./app/*"],
-      "@layouts/*": ["./app/layouts/*"],
-      "@routes/*": ["./app/routes/*"],
-      "@components/*": ["./app/components/*"],
-      "@server/*": ["./server/*"]
-    },
-    "declaration": true,
-    "sourceMap": true,
-    "outDir": "./dist",
-    "removeComments": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "alwaysStrict": true,
-    "skipDefaultLibCheck": true,
-    "skipLibCheck": true,
-    "declarationDir": "./dist"
-  },
+	"compilerOptions": {
+		"target": "ES2022",
+		"module": "ESNext",
+		"rootDir": "./server",
+		"types": ["node"],
+		"moduleResolution": "bundler",
+		"baseUrl": "./server",
+		"paths": {
+			"@app/*": ["./app/*"],
+			"@layouts/*": ["./app/layouts/*"],
+			"@routes/*": ["./app/routes/*"],
+			"@components/*": ["./app/components/*"],
+			"@server/*": ["./server/*"]
+		},
+		"declaration": true,
+		"sourceMap": true,
+		"outDir": "./dist",
+		"removeComments": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"alwaysStrict": true,
+		"skipDefaultLibCheck": true,
+		"skipLibCheck": true,
+		"declarationDir": "./dist"
+	},
 
-  "include": ["./server/**/*.ts"],
-  "exclude": ["./node_modules"]
+	"include": ["./server/**/*.ts"],
+	"exclude": ["./node_modules"]
 }
