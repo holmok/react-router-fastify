@@ -1,5 +1,5 @@
-import { Links, Meta, Scripts, ScrollRestoration } from 'react-router'
 import type { ReactNode } from 'react'
+import { Links, Meta, Scripts, ScrollRestoration } from 'react-router'
 
 export default function HtmlLayout({ children }: { children: ReactNode }) {
 	return (

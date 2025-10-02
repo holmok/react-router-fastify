@@ -32,7 +32,7 @@
 		"vite-tsconfig-paths": "^5.1.4"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.1.2",
+		"@biomejs/biome": "2.2.4",
 		"@react-router/dev": "^7.3.0",
 		"@types/node": "^24.1.0",
 		"@types/react": "^19.0.10",
@@ -53,7 +53,7 @@
 		"compile:client": "react-router build",
 		"compile": "yarn compile:server && yarn compile:client",
 		"build": "yarn && yarn format && yarn lint && yarn clean && yarn compile",
-		"lint": "biome lint",
+		"lint": "biome check",
 		"tsc": "tsc",
 		"typegen": "react-router typegen",
 		"start": "NODE_ENV=production node dist/index.js"
