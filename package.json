@@ -24,15 +24,15 @@
 		"@react-router/serve": "^7.3.0",
 		"fastify": "^5.2.1",
 		"isbot": "^5",
-		"pino": "^9.7.0",
-		"pino-http": "^10.4.0",
+		"pino": "^10.1.0",
+		"pino-http": "^11.0.0",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
 		"react-router": "^7.6.0",
 		"vite-tsconfig-paths": "^5.1.4"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.2.4",
+		"@biomejs/biome": "^2.3.5",
 		"@react-router/dev": "^7.3.0",
 		"@types/node": "^24.1.0",
 		"@types/react": "^19.0.10",
